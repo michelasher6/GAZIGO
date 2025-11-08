@@ -1,0 +1,35 @@
+{
+  "name": "gazigo-platform",
+  "version": "1.0.0",
+  "description": "GAZIGO - Hybrid platform for domestic gas delivery in Cameroon",
+  "private": true,
+  "workspaces": [
+    "mobile-app",
+    "web-admin",
+    "web-vendor",
+    "web-customer",
+    "backend-api",
+    "ussd-service",
+    "shared"
+  ],
+  "scripts": {
+    "dev:backend": "cd backend-api && npm run dev",
+    "dev:admin": "cd web-admin && npm run dev",
+    "dev:vendor": "cd web-vendor && npm run dev",
+    "dev:customer": "cd web-customer && npm run dev",
+    "dev:ussd": "cd ussd-service && npm run dev",
+    "build": "npm run build --workspaces",
+    "test": "npm run test --workspaces",
+    "lint": "npm run lint --workspaces"
+  },
+  "keywords": [
+    "gas-delivery",
+    "logistics",
+    "cameroon",
+    "mobile-money",
+    "ussd"
+  ],
+  "author": "GAZIGO Team",
+  "license": "UNLICENSED"
+}
+

@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-blue: #1E90FF;
+  --primary-orange: #FF8C00;
+  --success: #10B981;
+  --error: #EF4444;
+  --warning: #F59E0B;
+  --info: #3B82F6;
+}
+
+body {
+  @apply bg-gray-50 text-gray-900;
+}
+

@@ -1,0 +1,58 @@
+{
+  "common": {
+    "welcome": "Welcome to GAZIGO",
+    "slogan": "Your gas, delivered safely.",
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "retry": "Retry",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "back": "Back",
+    "next": "Next",
+    "submit": "Submit"
+  },
+  "auth": {
+    "login": "Login",
+    "register": "Register",
+    "logout": "Logout",
+    "phoneNumber": "Phone Number",
+    "enterPhone": "Enter your phone number",
+    "otpSent": "OTP sent to your phone",
+    "enterOtp": "Enter OTP",
+    "verify": "Verify",
+    "resendOtp": "Resend OTP"
+  },
+  "orders": {
+    "title": "Orders",
+    "newOrder": "New Order",
+    "orderHistory": "Order History",
+    "trackOrder": "Track Order",
+    "cylinderType": "Cylinder Type",
+    "quantity": "Quantity",
+    "deliveryAddress": "Delivery Address",
+    "totalAmount": "Total Amount",
+    "deliveryFee": "Delivery Fee",
+    "status": "Status",
+    "pending": "Pending",
+    "confirmed": "Confirmed",
+    "preparing": "Preparing",
+    "dispatched": "Dispatched",
+    "inTransit": "In Transit",
+    "delivered": "Delivered",
+    "cancelled": "Cancelled"
+  },
+  "payment": {
+    "title": "Payment",
+    "selectMethod": "Select Payment Method",
+    "mobileMoney": "Mobile Money",
+    "cash": "Cash",
+    "pay": "Pay",
+    "processing": "Processing...",
+    "success": "Payment Successful",
+    "failed": "Payment Failed"
+  }
+}
+

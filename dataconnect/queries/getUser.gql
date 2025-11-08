@@ -1,0 +1,12 @@
+# Query to get a user by ID
+query GetUser($userId: UUID!) @query {
+  user(id: $userId) {
+    id
+    username
+    email
+    phoneNumber
+    fullName
+    role
+  }
+}
+

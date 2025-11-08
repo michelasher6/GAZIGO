@@ -1,0 +1,47 @@
+connectorId: example
+generate:
+  javascriptSdk:
+    - outputDir: ..\..\gazigo-platform\src\dataconnect-generated
+      package: "@dataconnect/generated"
+      packageJsonDir: ..\..\gazigo-platform
+      react: false
+      angular: false
+    - outputDir: ..\..\gazigo-platform\web-vendor\src\dataconnect-generated
+      package: "@dataconnect/generated"
+      packageJsonDir: ..\..\gazigo-platform\web-vendor
+      react: true
+      angular: false
+    - outputDir: ..\..\gazigo-platform\web-customer\src\dataconnect-generated
+      package: "@dataconnect/generated"
+      packageJsonDir: ..\..\gazigo-platform\web-customer
+      react: true
+      angular: false
+    - outputDir: ..\..\gazigo-platform\web-admin\src\dataconnect-generated
+      package: "@dataconnect/generated"
+      packageJsonDir: ..\..\gazigo-platform\web-admin
+      react: true
+      angular: false
+    - outputDir: ..\..\gazigo-platform\ussd-service\src\dataconnect-generated
+      package: "@dataconnect/generated"
+      packageJsonDir: ..\..\gazigo-platform\ussd-service
+      react: false
+      angular: false
+    - outputDir: ..\..\gazigo-platform\shared\src\dataconnect-generated
+      package: "@dataconnect/generated"
+      packageJsonDir: ..\..\gazigo-platform\shared
+      react: false
+      angular: false
+    - outputDir: ..\..\gazigo-platform\mobile-app\src\dataconnect-generated
+      package: "@dataconnect/generated"
+      packageJsonDir: ..\..\gazigo-platform\mobile-app
+      react: true
+      angular: false
+    - outputDir: ..\..\gazigo-platform\backend-api\src\dataconnect-generated
+      package: "@dataconnect/generated"
+      packageJsonDir: ..\..\gazigo-platform\backend-api
+      react: false
+      angular: false
+  adminNodeSdk:
+    - outputDir: ..\..\gazigo-platform\backend-api\src\dataconnect-admin-generated
+      package: "@dataconnect/admin-generated"
+      packageJsonDir: ..\..\gazigo-platform\backend-api

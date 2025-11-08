@@ -1,0 +1,11 @@
+# Query to list orders
+query ListOrders @query {
+  orders {
+    id
+    orderNumber
+    orderDate
+    status
+    totalPrice
+  }
+}
+

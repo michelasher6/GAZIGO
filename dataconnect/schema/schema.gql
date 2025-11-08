@@ -1,0 +1,53 @@
+type User @table {
+  username: String!
+  passwordHash: String!
+  role: String!
+  createdAt: Timestamp!
+  email: String
+  phoneNumber: String
+  fullName: String
+  address: String
+}
+
+type GasCylinder @table {
+  name: String!
+  capacityKG: Float!
+  price: Float!
+  createdAt: Timestamp!
+  description: String
+  imageUrl: String
+}
+
+type Order @table {
+  orderNumber: String!
+  orderDate: Timestamp!
+  deliveryAddress: String!
+  status: String!
+  totalPrice: Float!
+  customer: User!
+  gasCylinder: GasCylinder!
+  notes: String
+  scheduledDeliveryTime: Timestamp
+}
+
+type Delivery @table {
+  deliveryDate: Timestamp!
+  status: String!
+  order: Order!
+  assignedAgent: User!
+  assignedDistributor: User!
+  pickupTime: Timestamp
+  deliveryAttemptTime: Timestamp
+  completionTime: Timestamp
+  customerSignatureUrl: String
+  deliveryProofPhotoUrl: String
+}
+
+type Review @table {
+  rating: Int!
+  reviewDate: Timestamp!
+  comment: String
+  order: Order!
+  customer: User!
+  agent: User
+}
